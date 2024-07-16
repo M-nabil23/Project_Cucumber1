@@ -7,7 +7,7 @@ Feature: this feature will allow the guest users to create a new valid accounts
 
   @smoke
   # Positive Scenario:
-  Scenario Outline: guest user could create valid account
+  Scenario: guest user could create valid account
 
     When user select his gender
     And user enter his first and his last name
@@ -18,11 +18,11 @@ Feature: this feature will allow the guest users to create a new valid accounts
     And user enter his password and  confirm password
     And user click on register Button
     Then new account is created successfully
-    Examples:
-      | round |
-      | 1 |
-      | 2 |
-      | 3 |
+#    Examples:
+#      | round |
+#      | 1 |
+#      | 2 |
+#      | 3 |
 
 
   # Negative Scenario

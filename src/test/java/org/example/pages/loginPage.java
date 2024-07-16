@@ -26,5 +26,7 @@ public class loginPage {
     @FindBy(className = "login-button")
     public WebElement loginButtonInLoginPage;
 
+    @FindBy(className = "validation-summary-errors")
+    public WebElement errorMsg;
 
 }

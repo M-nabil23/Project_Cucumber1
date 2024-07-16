@@ -87,13 +87,11 @@ public class signUp {
     }
 
     @And("user enter his email")
-    public void userEnterHisEmail() throws InterruptedException, IOException {
+    public void userEnterHisEmail() throws IOException {
         Faker fake = new Faker();
        email = fake.internet().emailAddress();
       configuration.set("email",email);
         register.email.sendKeys(email);
-        Thread.sleep(2000);
-
 
     }
     @And("user enter his company name")
@@ -105,7 +103,7 @@ public class signUp {
     @And("user unselect newsLetter")
     public void userUnselectNewsLetter()
     {
-        //it means if this check box is not selected go into the if and make the action which is click
+        //it means if this check box is not selected go into the if and make the action which is clicked
         if(!register.newsletter.isSelected()) {
             register.newsletter.click();
         }
