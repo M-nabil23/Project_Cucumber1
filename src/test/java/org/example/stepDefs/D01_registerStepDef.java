@@ -19,7 +19,7 @@ import java.io.IOException;
 
 import static org.example.stepDefs.Hooks.driver;
 
-public class signUp {
+public class D01_registerStepDef {
 
 
     homePage  home = new homePage();

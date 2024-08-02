@@ -5,7 +5,7 @@ Feature: this feature will allow the guest users to create a new valid accounts
   Background: shared steps for signUp
     Given user go to register page
 
-  @smoke
+
   # Positive Scenario:
   Scenario: guest user could create valid account
 
@@ -18,11 +18,7 @@ Feature: this feature will allow the guest users to create a new valid accounts
     And user enter his password and  confirm password
     And user click on register Button
     Then new account is created successfully
-#    Examples:
-#      | round |
-#      | 1 |
-#      | 2 |
-#      | 3 |
+
 
 
   # Negative Scenario

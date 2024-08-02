@@ -10,7 +10,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
-public class login {
+public class D02_loginStepDef {
 
     loginPage login = new loginPage();
     SoftAssert soft = new SoftAssert();
@@ -30,7 +30,7 @@ public class login {
 
     @And("user enter his password in Login Page")
     public void userEnterHisPasswordInLoginPage() {
-        login.password.sendKeys(signUp.password);
+        login.password.sendKeys(D01_registerStepDef.password);
     }
 
     @And("user click on loginButton in Login Page")
